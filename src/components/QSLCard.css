@@ -1,0 +1,187 @@
+.qsl-card-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 600px;
+}
+
+.qsl-card {
+  width: 100%;
+  max-width: 600px;
+  height: 400px;
+  background: 
+    linear-gradient(rgba(254, 249, 231, 0.75), rgba(254, 249, 231, 0.75)),
+    url('/img/background.jpg');
+  background-size: cover;
+  background-position: center;
+  border: 2px solid #000;
+  padding: 20px;
+  position: relative;
+  font-family: Arial, sans-serif;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  margin: 0 auto;
+}
+
+/* Header */
+.qsl-header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.country-title {
+  font-size: 24px;
+  font-weight: bold;
+  color: #000;
+  margin-bottom: 5px;
+}
+
+.zone-info {
+  font-size: 14px;
+  font-weight: bold;
+  color: #000;
+}
+
+/* Main Call Sign */
+.main-callsign {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.callsign {
+  font-size: 48px;
+  font-weight: bold;
+  color: #000;
+  margin-bottom: 5px;
+}
+
+.ex-callsign {
+  font-size: 14px;
+  color: #ecf0f1;
+  font-weight: 500;
+}
+
+/* Data Table */
+.data-table {
+  margin: 20px 0;
+}
+
+.data-table table {
+  width: 100%;
+  border-collapse: collapse;
+  border: 2px solid #000;
+}
+
+.data-table th {
+  background: #000;
+  color: #fff;
+  padding: 8px 4px;
+  font-size: 10px;
+  font-weight: bold;
+  text-align: center;
+  border: 1px solid #000;
+}
+
+.data-table td {
+  padding: 8px 4px;
+  border: 1px solid #000;
+  text-align: center;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.sub-header {
+  background: #000;
+  color: #fff;
+}
+
+.date-sub-header {
+  display: flex;
+  justify-content: space-between;
+  font-size: 8px;
+}
+
+.date-data {
+  display: flex;
+  justify-content: space-between;
+  font-size: 12px;
+}
+
+.data-cell {
+  background: #fff;
+  color: #000;
+}
+
+/* Footer */
+.qsl-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-top: 20px;
+  height: 80px;
+}
+
+
+/* Action Buttons Container */
+.action-buttons {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  margin-top: 25px;
+}
+
+.save-png-btn {
+  background: linear-gradient(135deg, #28a745, #20c997);
+  color: white;
+  border: none;
+  padding: 15px 30px;
+  border-radius: 12px;
+  font-size: 16px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 6px 20px rgba(40, 167, 69, 0.4), 0 2px 8px rgba(0,0,0,0.1);
+  backdrop-filter: blur(10px);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.save-png-btn:hover {
+  background: linear-gradient(135deg, #20c997, #28a745);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(40, 167, 69, 0.5), 0 4px 12px rgba(0,0,0,0.15);
+}
+
+
+@media (max-width: 768px) {
+  .qsl-card {
+    width: 90%;
+    height: auto;
+    min-height: 400px;
+  }
+  
+  .callsign {
+    font-size: 36px;
+  }
+  
+  .data-table th,
+  .data-table td {
+    font-size: 8px;
+    padding: 4px 2px;
+  }
+  
+  .action-buttons {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .save-png-btn {
+    width: 100%;
+    max-width: 250px;
+    padding: 12px 20px;
+    font-size: 14px;
+  }
+}
